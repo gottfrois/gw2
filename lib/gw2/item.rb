@@ -6,8 +6,8 @@ module GW2
       get("/items.json")
     end
 
-    def self.details(item_id)
-      get("/items/#{item_id}.json")
+    def self.details(item_id, lang = 'en')
+      get("/items/#{item_id}.json", lang: lang)
     end
   end
 end
